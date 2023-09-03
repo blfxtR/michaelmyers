@@ -1,0 +1,592 @@
+{
+	map			"mp_convoy"
+	longname	"MPUI_CONVOY"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_backlot"
+	longname	"MPUI_BACKLOT"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_bloc"
+	longname	"MPUI_BLOC"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_bog"
+	longname	"MPUI_BOG"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_countdown"
+	longname	"MPUI_COUNTDOWN"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_crash"
+	longname	"MPUI_CRASH"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_crossfire"
+	longname	"MPUI_CROSSFIRE"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_citystreets"
+	longname	"MPUI_CITYSTREETS"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+{
+	map			"mp_farm"
+	longname	"MPUI_FARM"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_overgrown"
+	longname	"MPUI_OVERGROWN"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_pipeline"
+	longname	"MPUI_PIPELINE"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_shipment"
+	longname	"MPUI_SHIPMENT"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_showdown"
+	longname	"MPUI_SHOWDOWN"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_strike"
+	longname	"MPUI_STRIKE"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_vacant"
+	longname	"MPUI_VACANT"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_cargoship"
+	longname	"MPUI_CARGOSHIP"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_crash_snow"
+	longname	"MPUI_CRASH_SNOW"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_broadcast"
+	longname	"MPUI_BROADCAST"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_creek"
+	longname	"MPUI_CREEK"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_carentan"
+	longname	"MPUI_CARENTAN"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+{
+	map			"mp_killhouse"
+	longname	"MPUI_KILLHOUSE"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+}
+
+
+// Death Run Maps
+{
+	map			"mp_deathrun_amazon"
+	longname	"Amazon"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_annihilation"
+	longname	"Annihilation"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_apollo"
+	longname	"Apollo"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_arbase"
+	longname	"Arbase"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_asd"
+	longname	"ASD"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_azteca"
+	longname	"Azteca"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_backlot"
+	longname	"Backlot"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_bangarang"
+	longname	"Bangarang"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_beauty_v2"
+	longname	"Beauty v2"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_black_friday"
+	longname	"Black Friday"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_bland"
+	longname	"Bland"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_boss"
+	longname	"Boss"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_bounce_v3"
+	longname	"Bounce v2"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_bricky"
+	longname	"Bricky"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_bridge"
+	longname	"Bridge"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_building"
+	longname	"Building"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_bunker"
+	longname	"Bunker"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_cage"
+	longname	"Cage"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_castle"
+	longname	"Castle"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_cave"
+	longname	"Cave"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_cherry"
+	longname	"Cherry"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_chunk"
+	longname	"Chunk"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_city"
+	longname	"City"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_clear"
+	longname	"Clear"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_clockwork"
+	longname	"Clockwork"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_colourful"
+	longname	"Colourful"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_cookie"
+	longname	"Cookie"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_cosmic"
+	longname	"Cosmic"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_coyote"
+	longname	"Coyote"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_crazy"
+	longname	"Crazy"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_crystal"
+	longname	"Crystal"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_dark"
+	longname	"Dark"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_darkness"
+	longname	"Darkness"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_death"
+	longname	"Death"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_destroyedv3"
+	longname	"Destroyed v3"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_diehard"
+	longname	"Diehard"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_dirt"
+	longname	"Dirt"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_divide"
+	longname	"Divide"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_dragonball"
+	longname	"Dragonball"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_dudu"
+	longname	"Dudu"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_dungeon"
+	longname	"Dungeon"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_easy"
+	longname	"Easy"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_ebc"
+	longname	"eBc"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_empire"
+	longname	"Empire"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_epicfail"
+	longname	"Epicfail"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_escape"
+	longname	"Escape"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_escape2"
+	longname	"Escape2"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_eudora"
+	longname	"Eudora"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_factory"
+	longname	"Factory"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_farm"
+	longname	"Farm"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_fearful"
+	longname	"Fearful"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_fidd"
+	longname	"Fidd"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_flow"
+	longname	"Flow"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_fluxx"
+	longname	"Fluxx"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_fly"
+	longname	"Fly"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_fnrp"
+	longname	"Fnrp"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_forest"
+	longname	"Forest"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_framey_v2"
+	longname	"Framey v2"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_framey_v3"
+	longname	"Framey v3"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_freefall"
+	longname	"Freefall"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_freerun"
+	longname	"Freerun"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_fusion"
+	longname	"Fusion"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_galaxy"
+	longname	"Galaxy"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_glass"
+	longname	"Glass"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_godfather"
+	longname	"Godfather"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_grassy"
+	longname	"Grassy"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_grassy_v4"
+	longname	"Grassy v4"
+	gametype	"deathrun"
+}
+{
+	map			"mp_deathrun_greenland"
+	longname	"Greenland"
+	gametype	"deathrun"
+}
+{
+	map 		"mp_deathrun_highrise"
+	longname	"Highrise"
+	gametype	"deathrun"
+}
+{
+	map 		"mp_deathrun_highup"
+	longname 	"Highup"
+	gametype	"deathrun"
+}
+{
+	map 		"mp_deathrun_holylife"
+	longname	"Holylife"
+	gametype	"deathrun"
+}
+{
+	map 		"mp_deathrun_hop"
+	longname	"Hop"
+	gametype	"deathrun"
+}
+{
+	map 		"mp_deathrun_hotel"
+	longname 	"Hotel"
+	gametype	"deathrun"
+}
+{
+	map 		"mp_deathrun_horror"
+	longname 	"Horror"
+	gametype	"deathrun"
+}
+{
+	map 		"mp_deathrun_illusion"
+	longname 	"Illusion"
+	gametype	"deathrun"
+}
+{ 
+	map 		"mp_deathrun_industry"
+	longname	"Industry"
+	gametype	"deathrun"
+}
+{
+	map 		"mp_deathrun_inferno"
+	longname 	"Inferno"
+	gametype	"deathrun"
+}
+{
+	map 		"mp_deathrun_island"
+	longname 	"Island"
+	gametype	"deathrun"
+}
+{
+	map 		"mp_deathrun_islands"
+	longname	"Islands"
+	gametype	"deathrun"
+}
+{
+	map 		"mp_deathrun_jailhouse"
+	longname	"Jailhouse"
+	gametype	"deathrun"
+}
+{
+	map 		"mp_deathrun_lalamx"
+	longname	"Lalamx"
+	gametype	"deathrun"
+}
+{
+	map 		"mp_deathrun_legend"
+	longname	"Legend"
+	gametype	"deathrun"
+}
+{
+	map 		"mp_deathrun_liferun"
+	longname	"Liferun"
+	gametype	"deathrun"
+}
+{
+	map			"mp_vc_bridge"
+	longname	"^1Vistic's^7 Bridge"
+	gametype	"deathrun"
+}
+{
+	map			"mp_vc_crypt"
+	longname	"^1Vistic's^7 Crypt"
+	gametype	"deathrun"
+}
+{
+	map			"mp_vc_high"
+	longname	"^1Vistic's^7 High"
+	gametype	"deathrun"
+}
+{
+	map			"mp_vc_nike"
+	longname	"^1Vistic's^7 Nike"
+	gametype	"deathrun"
+}
+{
+	map			"mp_vc_paradise"
+	longname	"^1Vistic's^7 Paradise"
+	gametype	"deathrun"
+}
+{
+	map			"mp_vc_sam"
+	longname	"^1Vistic's^7 Sam"
+	gametype	"deathrun"
+}
+{
+	map			"mp_vc_unnatural"
+	longname	"^1Vistic's^7 Unnatural"
+	gametype	"deathrun"
+}
+{
+	map			"mp_vc_sac"
+	longname	"^1Vistic's^7 SaC"
+	gametype	"deathrun"
+}
+{
+	map			"mp_vc_hw_town"
+	longname	"^1Vistic's^7 HW Town"
+	gametype	"deathrun"
+}
+{
+	map 		"mp_vc_universe"
+	longname 	"^1Vistic's^7 Universe"
+	gametpye	"deathrun"
+}
