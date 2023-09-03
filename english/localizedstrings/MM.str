@@ -1,0 +1,53 @@
+VERSION             "1"
+CONFIG              "C:\trees\cod3\cod3\bin\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE		 	GT
+LANG_ENGLISH 		"Michael Myers"
+
+REFERENCE           RANK_0
+LANG_ENGLISH        "Tyro"
+
+REFERENCE           RANK_1
+LANG_ENGLISH        "Casualty"
+
+REFERENCE           RANK_2
+LANG_ENGLISH        "Scared"
+
+REFERENCE           RANK_3
+LANG_ENGLISH        "Injured"
+
+REFERENCE           RANK_4
+LANG_ENGLISH        "Infected"
+
+REFERENCE           RANK_5
+LANG_ENGLISH        "Wasted"
+
+REFERENCE           RANK_6
+LANG_ENGLISH        "Lunatic"
+
+REFERENCE           RANK_7
+LANG_ENGLISH        "Damaged"
+
+REFERENCE           RANK_8
+LANG_ENGLISH        "Hypocrite"
+
+REFERENCE           RANK_9
+LANG_ENGLISH        "Sneak"
+
+REFERENCE           RANK_10
+LANG_ENGLISH        "Conqueror"
+
+REFERENCE 			STILL_ALIVE
+LANG_ENGLISH		"Still Alive!"
+
+REFERENCE 			PROMOTED
+LANG_ENGLISH		"Promoted!"
+
+REFERENCE 			LAST_HIDER
+LANG_ENGLISH		"Last Hider!"
+
+REFERENCE			BATTERY
+LANG_ENGLISH		"Electrified"
+
+ENDMARKER
