@@ -1,0 +1,108 @@
+#include "ui/menudef.h"
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+#include "ui_mp/common_macro.inc"
+#include "ui_mp/menu_common.inc"
+
+{
+	menuDef
+	{
+		name			"voting"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		legacySplitScreenScale
+		
+		onOpen {}
+		onClose {}
+		onEsc {}
+		
+		// background
+		itemDef 
+		{
+			rect			175 198 300 100
+			style			WINDOW_STYLE_FILLED
+			border			1
+			bordercolor		.2 .2 .2 .55
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.6
+			visible 		1
+			decoration	
+		}
+
+		itemDef
+		{
+			rect			177 200 298 20
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.8
+			visible			1 
+			decoration
+		}
+		
+		itemDef
+		{
+			visible			1
+			origin			325 219
+			forecolor		1 1 1 1
+			text            "Voting"
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_CENTER
+			textscale		0.4
+			decoration
+		}
+
+		itemDef
+		{
+			visible			1
+			origin			450 219
+			forecolor		1 1 1 1
+			dvar			"vote_timer"
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_RIGHT
+			textscale		0.4
+			decoration
+		}
+
+		MENU_BUTTON( "0", 185, 225, 280, 20, dvarstring("vote_item_0"), scriptMenuResponse "0";, 1 )
+		MENU_BUTTON( "1", 185, 248, 280, 20, dvarstring("vote_item_1"), scriptMenuResponse "1";, 1 )
+		MENU_BUTTON( "2", 185, 271, 280, 20, dvarstring("vote_item_2"), scriptMenuResponse "2";, 1 )
+
+		itemDef
+		{
+			visible			1
+			origin			450 242
+			forecolor		1 0 0 1
+			dvar 			"vote_0"
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_RIGHT
+			textscale		0.3
+			decoration
+		}
+
+		itemDef
+		{
+			visible			1
+			origin			450 266
+			forecolor		1 0 0 1
+			dvar 			"vote_1"
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_RIGHT
+			textscale		0.3
+			decoration
+		}
+
+		itemDef
+		{
+			visible			1
+			origin			450 289
+			forecolor		1 0 0 1
+			dvar 			"vote_2"
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_RIGHT
+			textscale		0.3
+			decoration
+		}
+	}
+}

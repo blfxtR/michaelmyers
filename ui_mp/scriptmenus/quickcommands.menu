@@ -1,0 +1,143 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define CHOICE_GROUP			"quickcommands"
+
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+#include "ui_mp/popupstyle.inc"	
+#include "ui/choices_setup_popmenu.menu"
+
+#undef CHOICE_SIZE_X
+#define CHOICE_SIZE_X			186
+
+#undef CHOICE_POPUP_BACKCOLOR
+#define CHOICE_POPUP_BACKCOLOR  0.2 0.2 0.22 0.65
+
+#define ORIGIN_QUICKMESSAGEWINDOW		0 10
+
+{
+	menuDef
+	{
+		IMPROVED_POPUP_SETUP_ONOPEN( quickcommands, 7, 4, 270, ;, setDvar cl_bypassMouseInput "1";, 0 )
+		onClose{ setDvar cl_bypassMouseInput "0" }
+				
+		itemDef
+		{
+			name			"window"
+			group			ingamebox
+			visible			1
+			rect			17 10 0 0
+			origin			ORIGIN_QUICKMESSAGEWINDOW
+			forecolor		1 0 0 1
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textscale		0.25
+			textaligny		8
+			text			"1. ^7Follow Me"
+			decoration
+		}
+		execKey "1" { scriptMenuResponse "1"; close quickcommands; }
+	
+		itemDef
+		{
+			name			"window"
+			group			ingamebox
+			visible			1
+			rect			17 22 0 0
+			origin			ORIGIN_QUICKMESSAGEWINDOW
+			forecolor		1 0 0 1
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textscale		0.25
+			textaligny		8
+			text			"2. ^7Keep Quiet"
+			decoration
+		}
+		execKey "2" { scriptMenuResponse "2"; close quickcommands }
+	
+		itemDef
+		{
+			name			"window"
+			group			ingamebox
+			visible			1
+			rect			17 34 0 0
+			origin			ORIGIN_QUICKMESSAGEWINDOW
+			forecolor		1 0 0 1
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textscale		0.25
+			textaligny		8
+			text			"3. ^7He is Near"
+			decoration
+		}
+		execKey "3" { scriptMenuResponse "3"; close quickcommands }
+	
+		itemDef
+		{
+			name			"window"
+			group			ingamebox
+			visible			1
+			rect			17 46 0 0
+			origin			ORIGIN_QUICKMESSAGEWINDOW
+			forecolor		1 0 0 1
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textscale		0.25
+			textaligny		8
+			text			"4. ^7Contact!"
+			decoration
+		}
+		execKey "4" { scriptMenuResponse "4"; close quickcommands }
+	
+		itemDef
+		{
+			name			"window"
+			group			ingamebox
+			visible			1
+			rect			17 58 0 0
+			origin			ORIGIN_QUICKMESSAGEWINDOW
+			forecolor		1 0 0 1
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textscale		0.25
+			textaligny		8
+			text			"5. ^7Roger that!"
+			decoration
+		}
+		execKey "5" { scriptMenuResponse "5"; close quickcommands }
+	
+		itemDef
+		{
+			name			"window"
+			group			ingamebox
+			visible			1
+			rect			17 70 0 0
+			origin			ORIGIN_QUICKMESSAGEWINDOW
+			forecolor		1 0 0 1
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textscale		0.25
+			textaligny		8
+			text			"6. ^7Negative"
+			decoration
+		}
+		execKey "6" { scriptMenuResponse "6"; close quickcommands }
+	
+		itemDef
+		{
+			name			"window"
+			visible			1
+			rect			17 118 0 0
+			origin			ORIGIN_QUICKMESSAGEWINDOW
+			forecolor		1 0 0 1
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textscale		0.25
+			textaligny		8
+			text			"Esc. ^7Exit"
+			decoration
+		}
+	}
+}

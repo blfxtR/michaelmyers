@@ -1,0 +1,193 @@
+#include "ui/menudef.h"
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+#include "ui_mp/common_macro.inc"
+#include "ui_mp/menu_common.inc"
+
+{
+	menuDef
+	{
+		name			"team_select"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		legacySplitScreenScale
+		
+		onOpen {}
+		onClose {}
+		onEsc {close self;}
+		
+		#include "ui_mp/menu_frame.inc"
+
+		MENU_BUTTON( "0", 185, 230, 280, 20, "Auto-Assign", scriptMenuResponse "autoassign";, 1 )
+		MENU_BUTTON( "1", 185, 250, 280, 20, "Spectator", scriptMenuResponse "spectator";, 1 )
+		MENU_BUTTON( "2", 185, 275, 280, 20, "Knife Selection", close self; open knife_select;, 1 )
+		MENU_BUTTON( "3", 185, 295, 280, 20, "Options", open popup_options_new;, 1 )
+		MENU_BUTTON( "4", 185, 320, 280, 20, "@MENU_LEAVE_GAME", open popup_endgame_new;, 1 )
+	}
+	
+	menuDef
+	{
+		name			"popup_endgame_new"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		legacySplitScreenScale
+
+		onOpen {close team_select;}
+		onClose {}
+		onEsc {close self;open team_select;}
+		
+		// background
+		itemDef 
+		{
+			rect			175 198 300 78
+			style			WINDOW_STYLE_FILLED
+			border			1
+			bordercolor		.2 .2 .2 .55
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.6
+			visible 		1
+			decoration	
+		}
+
+		itemDef
+		{
+			rect			177 200 298 20
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.8
+			visible			1 
+			decoration
+		}
+		
+		itemDef
+		{
+			visible			1
+			origin			330 219
+			forecolor		1 1 1 1
+			text            "What do you want to do?"
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_CENTER
+			textscale		0.4
+			decoration
+		}
+
+		MENU_BUTTON( "0", 185, 227, 280, 20, "Quit Server", close self; exec "disconnect";, 1 )
+		MENU_BUTTON( "1", 185, 248, 280, 20, "Quit CoD4", close self; exec "quit";, 1 )
+	}
+
+	menuDef
+	{
+		name			"popup_options_new"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		legacySplitScreenScale
+
+		onOpen {close team_select;}
+		onClose {}
+		onEsc {close self;open team_select;}
+		
+		// background
+		itemDef 
+		{
+			rect			175 198 300 78
+			style			WINDOW_STYLE_FILLED
+			border			1
+			bordercolor		.2 .2 .2 .55
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.6
+			visible 		1
+			decoration	
+		}
+
+		itemDef
+		{
+			rect			177 200 298 20
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.8
+			visible			1 
+			decoration
+		}
+		
+		itemDef
+		{
+			visible			1
+			origin			330 219
+			forecolor		1 1 1 1
+			text            "What do you want to do?"
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_CENTER
+			textscale		0.4
+			decoration
+		}
+
+		MENU_BUTTON( "0", 185, 227, 280, 20, "Options", close self; open main_options;, 1 )
+		MENU_BUTTON( "1", 185, 248, 280, 20, "Controls", close self; open main_controls;, 1 )
+	}
+
+	menuDef
+	{
+		name			"knife_select"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		legacySplitScreenScale
+		
+		onOpen {}
+		onClose {}
+		onEsc {close self;}
+		
+		// background
+		itemDef 
+		{
+			rect			175 150 300 190
+			style			WINDOW_STYLE_FILLED
+			border			1
+			bordercolor		.2 .2 .2 .55
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.6
+			visible 		1
+			decoration	
+		}
+
+		itemDef
+		{
+			rect			177 152 298 20
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.8
+			visible			1 
+			decoration
+		}
+		
+		itemDef
+		{
+			visible			1
+			origin			330 170
+			forecolor		1 1 1 1
+			text            "Knife Selection"
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_CENTER
+			textscale		0.4
+			decoration
+		}
+
+		KNIFE_BUTTON( "0", 185, 180, 1 )
+		KNIFE_BUTTON( "1", 185, 203, 2 )
+		KNIFE_BUTTON( "2", 185, 226, 3 )
+		KNIFE_BUTTON( "3", 185, 249, 4 )
+		KNIFE_BUTTON( "4", 185, 272, 5 )
+
+		MENU_BUTTON( "5", 185, 310, 280, 20, "Back to Main Menu", close self; open team_select;, 1 )
+	}
+}
+
+
+	

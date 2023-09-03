@@ -1,0 +1,119 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define CHOICE_X_START			0
+#define CHOICE_Y_START			120
+
+#define CHOICE_GROUP			"main"
+#define CHOICE_SEP_1			3
+#define CHOICE_SEP_2			6
+#define CHOICE_SEP_3			9
+
+#define STYLE_PC	1
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+#include "ui_mp/menu_common.inc"
+
+{
+	assetGlobalDef
+	{
+		fadeClamp		1.0						// sets the fadeup alpha
+		fadeCycle		1						// how often fade happens in milliseconds
+		fadeAmount		0.1						// amount to adjust alpha per cycle
+	}
+	menuDef
+	{
+		name			"main"
+		fullScreen		1
+		rect			0 0 640 480
+		focusColor		COLOR_FOCUSED
+		soundloop 		"music_mainmenu_mp"
+		onOpen
+		{ 
+			open main_text;
+			uiScript addPlayerProfiles;
+			uiScript openMenuOnDvar com_playerProfile "" player_profile;
+			uiScript openMenuOnDvarNot ui_playerProfileCount 1 player_profile;
+			uiScript stopRefresh;
+			setdvar ui_showEndOfGame "0";
+		}
+		onClose{}
+		onESC  {}
+	}
+
+	menuDef
+	{
+		name			"main_text"
+		fullScreen		1
+		rect			0 0 640 480
+		focusColor		COLOR_FOCUSED
+		soundloop 		"music_mainmenu_mp"
+
+		onOpen {exec "selectStringTableEntryInDvar mp/didyouknow.csv 0 didyouknow";}
+		onClose{}
+        onESC  {}
+
+		itemDef
+		{
+			style				WINDOW_STYLE_SHADER
+			rect				FULLSCREEN_WIDE
+			background			"michael_main"
+			backcolor		    1 1 1 1
+			visible				1
+			decoration
+		}
+
+		itemDef 
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			-200 0 1000 1000
+			background		"overlay_low_health"
+			visible			1	
+		}
+
+		MENU_BUTTON("0", 230, 70, 180, 20, "Auto Update", open auconfirm;, when(dvarbool(cl_updateAvailable)))
+
+		MENU_BUTTON("1", 230, 95, 180, 20, "Official Michael Myers Server", ;, when(!localvarBool(ui_hideBack)))
+		MENU_BUTTON("2", 230, 115, 180, 20, "Server Browser", open pc_join_unranked;, when(!localvarBool(ui_hideBack)))
+
+		MENU_BUTTON("3", 230, 335, 180, 20, "Controls", open main_controls;, when(!localvarBool(ui_hideBack)))
+		MENU_BUTTON("4", 230, 355, 180, 20, "Options", open main_options;, when(!localvarBool(ui_hideBack)))
+
+		MENU_BUTTON("5", 230, 385, 180, 20, "Unload Mod",  uiScript ClearMods;, when(!localvarBool(ui_hideBack)))
+		MENU_BUTTON("6", 230, 415, 180, 20, "Quit Cod4", exec "quit";, when(!localvarBool(ui_hideBack)))
+
+		itemDef
+		{
+			visible			1
+			origin			320 50
+			forecolor		1 1 1 1
+			text            "Michael Myers Mod ^10.3"
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_CENTER
+			textscale		0.35
+			decoration
+		}
+		itemDef
+		{
+			visible			1
+			origin			320 70
+			forecolor		1 1 1 1
+			text            "Created by ^1Blade"
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_CENTER
+			textscale		0.3
+			decoration
+		}
+		itemDef
+		{
+			visible			1
+			origin			320 470
+			forecolor		1 1 1 1
+			text            "Visit ^1vistic-clan.net"
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_CENTER
+			textscale		0.3
+			decoration
+		}
+	}
+}
