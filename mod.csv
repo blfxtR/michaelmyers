@@ -1,0 +1,232 @@
+//	© VC' Blade
+//	Website: vistic-clan.net
+
+// Material
+material,michael_main
+material,michael_load
+material,rank_0
+material,rank_1
+material,rank_2
+material,rank_3
+material,rank_4
+material,rank_5
+material,rank_6
+material,rank_7
+material,rank_8
+material,rank_9
+material,rank_10
+
+// Mod Scripts
+rawfile,mike/_bots.gsc
+rawfile,mike/_commands.gsc
+rawfile,mike/_common.gsc
+rawfile,mike/_flashlight.gsc
+rawfile,mike/_items.gsc
+rawfile,mike/_logic.gsc
+rawfile,mike/_maps.gsc
+rawfile,mike/_menus.gsc
+rawfile,mike/_rank.gsc
+rawfile,mike/_settings.gsc
+rawfile,mike/_voting.gsc
+
+// Scripts
+rawfile,maps/mp/gametypes/_callbacksetup.gsc
+rawfile,maps/mp/gametypes/_gametypes.txt
+rawfile,maps/mp/gametypes/_persistence.gsc
+rawfile,maps/mp/gametypes/_hud_util.gsc
+rawfile,maps/mp/gametypes/mike.gsc
+rawfile,maps/mp/gametypes/mike.txt
+rawfile,mp/cod2maps.arena
+
+// Animation scripts
+rawfile,animtrees/multiplayer.atr
+rawfile,mp/playeranimtypes.txt
+rawfile,mp/playeranim.script
+
+// Bullet penetration
+rawfile,info/bullet_penetration_mp
+
+// Effects
+fx,effects/glowstick
+fx,effects/flashlight
+
+// Sounds
+sound,mike,,all_mp
+
+// Visions
+rawfile,vision/ambient.vision
+
+// Menus
+menufile,ui_mp/hud.menu
+menufile,ui_mp/main.menu
+menufile,ui_mp/connect.menu
+menufile,ui_mp/scriptmenus/admin_menu.menu
+menufile,ui_mp/menu_frame.inc
+menufile,ui_mp/scriptmenus/scoreboard.menu
+menufile,ui_mp/scriptmenus/clientcmd.menu
+menufile,ui_mp/scriptmenus/team_select.menu
+menufile,ui_mp/scriptmenus/voting.menu
+menufile,ui_mp/controls_multi.menu
+menufile,ui_mp/options_multi.menu
+menufile,ui/choices_setup_popmenu.menu
+menufile,ui_mp/scriptmenus/quickcommands.menu
+menufile,ui_mp/wm_quickmessage.menu
+
+// Models
+xmodel,viewmodel_hands_zombie
+
+// Weapons
+weapon,mp/flashlight_mp
+weapon,mp/knife_mp
+weapon,mp/axe_mp
+
+// Michael Myers
+xmodel,myers
+material,mtl_myers_boots
+material,mtl_myers_hair
+material,mtl_myers_head
+material,mtl_myers_lowerbody
+material,mtl_myers_mask
+material,mtl_myers_shirt
+material,mtl_myers_skin
+material,mtl_myers_upperbody
+
+// Tables & Strings
+stringtable,mp/ranktable.csv
+stringtable,mp/rankicontable.csv
+stringtable,mp/knifetable.csv
+stringtable,mp/modeltable.csv
+localize,mm
+
+// VC' Slasher
+material,mtl_vistic_knife
+xmodel,viewmodel_vistic_knife
+xanim,viewmodel_vistic_knife_idle
+xanim,viewmodel_vistic_knife_melee
+xanim,viewmodel_vistic_knife_pullout
+xanim,viewmodel_vistic_knife_putaway
+xanim,viewmodel_vistic_knife_sprint_in
+xanim,viewmodel_vistic_knife_sprint_loop
+xanim,viewmodel_vistic_knife_sprint_out
+
+// M9
+xmodel,knife_m9bayonet
+material,m9bayonet
+
+// Axe 
+xmodel,viewmodel_pxg_axe
+material,mtl_pxg_axe
+xanim,vm_pxg_axe_ads_down
+xanim,vm_pxg_axe_idle
+xanim,vm_pxg_axe_melee
+xanim,vm_pxg_axe_pullout
+xanim,vm_pxg_axe_putaway
+xanim,vm_pxg_axe_sprint_in
+xanim,vm_pxg_axe_sprint_loop
+xanim,vm_pxg_axe_sprint_out
+
+// Shank
+xmodel,wep_shank
+material,mtl_shank
+xanim,viewmodel_jugmaniac_idle
+xanim,viewmodel_jugmaniac_quick_raise
+xanim,viewmodel_jugmaniac_raise
+xanim,viewmodel_jugmaniac_sprint_in
+xanim,viewmodel_jugmaniac_sprint_out
+xanim,viewmodel_knife_melee_slice
+xanim,viewmodel_knife_melee_stab
+xanim,viewmodel_jugmaniac_sprint_out
+xanim,viewmodel_jugmaniac_drop
+xanim,viewmodel_jugmaniac_sprint_loop
+
+// Ice Picker
+xmodel,wep_icepicker
+material,mtl_weapon_ice_axe
+xanim,player_icepicker_drop_down_start
+xanim,viewmodel_icepicker_ads_down
+xanim,viewmodel_icepicker_ads_up
+xanim,viewmodel_icepicker_fire_both
+xanim,viewmodel_icepicker_idle
+xanim,viewmodel_icepicker_pullout
+xanim,viewmodel_icepicker_putaway
+xanim,viewmodel_icepicker_sprint_in
+xanim,viewmodel_icepicker_sprint_loop
+xanim,viewmodel_icepicker_sprint_out
+xanim,viewmodel_knife_melee_slice
+
+// Arlington
+xmodel,player_arlington_fb
+material,mtl_c_gen_insidemouth
+material,mtl_c_zom_arlington_cap
+material,mtl_c_zom_arlington_eye
+material,mtl_c_zom_arlington_head
+material,mtl_c_zom_arlington_intro_jacket
+material,mtl_c_zom_arlington_jacket
+material,mtl_c_zom_arlington_pants
+
+// Deluca
+xmodel,player_deluca_fb
+material,mtl_gen_eye_cornea
+material,mtl_c_zom_deluca_arms
+material,mtl_c_zom_deluca_eye
+material,mtl_c_zom_deluca_head
+material,mtl_c_zom_deluca_lower
+material,mtl_c_zom_deluca_upper
+
+// Engineer
+xmodel,player_engineer_fb
+material,mtl_c_gen_arm_dirty_asian
+material,mtl_c_zom_player_engineer_body
+material,mtl_c_zom_player_engineer_head
+material,mtl_c_zom_player_reporter_glass
+
+// Farmgirl
+xmodel,player_farmgirl_fb
+material,mtl_gen_eye_iris_darkbrown
+material,mtl_c_zom_player_farmgirl_arm
+material,mtl_c_zom_player_farmgirl_body
+material,mtl_c_zom_player_farmgirl_gear
+material,mtl_c_zom_player_farmgirl_glove
+material,mtl_c_zom_player_farmgirl_hair
+material,mtl_c_zom_player_farmgirl_head
+material,mtl_c_zom_player_farmgirl_skin
+
+// Handsome
+xmodel,player_handsome_fb
+material,mtl_gen_eye_iris_brown
+material,mtl_c_gen_arm_clean_black
+material,mtl_c_zom_handsome_eye
+material,mtl_c_zom_handsome_head
+material,mtl_c_zom_handsome_left_arm
+material,mtl_c_zom_handsome_pants
+material,mtl_c_zom_handsome_right_arm
+material,mtl_c_zom_handsome_shirt
+
+// Oleary
+xmodel,player_oleary_fb
+material,mtl_c_zom_oleary_arm
+material,mtl_c_zom_oleary_eye
+material,mtl_c_zom_oleary_head
+material,mtl_c_zom_oleary_lower
+material,mtl_c_zom_oleary_upper
+
+// Oldman
+xmodel,player_oldman_fb
+material,mtl_c_zom_player_oldman_body
+material,mtl_c_zom_player_oldman_head
+
+// Reporter
+xmodel,player_reporter_fb
+material,mtl_c_zom_player_reporter_arm
+material,mtl_c_zom_player_reporter_body
+material,mtl_c_zom_player_reporter_gear
+material,mtl_c_zom_player_reporter_head
+
+// Flashlight
+xmodel,viewmodel_fox_flashlight
+xanim,viewmodel_fox_flashlight_putaway
+xanim,viewmodel_fox_flashlight_idle
+xanim,viewmodel_fox_flashlight_pullout
+xanim,viewmodel_fox_flashlight_sprint_out
+xanim,viewmodel_fox_flashlight_sprint_in
+xanim,viewmodel_fox_flashlight_sprint_loop
